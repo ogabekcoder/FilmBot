@@ -17,17 +17,17 @@ scene.on('text', async (ctx) => {
       return await ctx.reply("Kino topilmadi");
     }
 
-    let caption = `${movie.name}\n\n@${ctx.botInfo.username}`
+    let caption = `${movie.name}\n\n🤖 Bizning bot: @${ctx.botInfo.username}`
 
     await ctx.replyWithVideo(
         movie.fileId,
         {
             caption,
-            reply_markup: {
-                inline_keyboard: [
-                    [{ text: 'Tugma matni', url: 'https://example.com' }]
-                ]
-            }
+            // reply_markup: {
+            //     inline_keyboard: [
+            //         [{ text: 'Tugma matni', url: 'https://example.com' }]
+            //     ]
+            // }
         }
     )
 });
