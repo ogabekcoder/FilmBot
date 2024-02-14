@@ -4,7 +4,7 @@ Installation Guide:
 
 * Clone the project
 ```shellscript
-https://github.com/OgabekMengn1yozov/TelegrafBotTemplate.git
+https://github.com/ogabekcoder/FilmBot.git
 ```
 
 * Install packages via npm or yarn package manager
