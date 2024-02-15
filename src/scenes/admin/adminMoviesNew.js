@@ -6,7 +6,7 @@ const adminNewMovieScene = new WizardScene(
     (ctx) => {
         let text = "✍️ Yangi film uchun nom kiriting";
         let keyboard = Markup.keyboard([
-            ["◀️ Ortga"]
+            ["❌ Bekor qilish"]
         ]).resize()
         ctx.reply(text, keyboard);
         return ctx.wizard.next();
@@ -35,6 +35,6 @@ const adminNewMovieScene = new WizardScene(
     }
 );
 
-adminNewMovieScene.hears('❌ Bekor qilish', ctx => ctx.scene.enter('admin:movies'));
+adminNewMovieScene.hears('❌ Bekor qilish', ctx => ctx.scene.enter('admin'));
 
 module.exports = adminNewMovieScene;
